@@ -1,0 +1,63 @@
+.info-container
+{
+    display: flex;
+    height: 96vh;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.image-container
+{
+    height: 100%;
+    width: 50%;
+}
+
+.image-container img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.other-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.other-info a
+{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.signup-handle img
+{
+    cursor: pointer;
+}
+
+.other-info h1
+{
+    font-size: 4rem;
+}

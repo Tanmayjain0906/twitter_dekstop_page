@@ -1,0 +1,44 @@
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.info
+{
+    width: 40%;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.logo
+{
+    align-self: flex-start;
+}
+
+.h1Tag
+{
+    align-self: flex-start;
+}
+
+.links
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a
+{
+    text-decoration: none;
+    color: var(--blue);
+    
+}
