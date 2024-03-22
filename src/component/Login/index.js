@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from "../../assets/logo.svg";
 import "./style.css";
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Login() {
     const [name, setName] = useState("");
@@ -12,11 +13,12 @@ function Login() {
     {
         if(!name || !password)
         {
-            alert("Please fill all the feild");
+            toast.error("Please fill all the feild");
         }
         else
         {
           navigate(`/welcome/${name}`);
+          toast.success("Login Successful");
         }
     }
 

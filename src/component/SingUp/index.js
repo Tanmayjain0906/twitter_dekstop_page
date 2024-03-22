@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./style.css"
 import logo from "../../assets/logo.svg"
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 function SingUp() {
 
@@ -15,16 +16,17 @@ function handleSingup()
 {
   if(!name || !phone || !dob)
   {
-    alert("Please fill all the feilds");
+    toast.error("Please fill all the feilds");
     return;
   }
   if(phone.length!==10)
   {
-    alert("plase Enter valid phone number");
+    toast.error("plase Enter valid phone number");
   }
   else
   {
     navigate(`/welcome/${name}`);
+    toast.success("Account created successfully");
   }
 }
 

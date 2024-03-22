@@ -17,7 +17,7 @@ function Twitter() {
                 </div>
 
                 <div className='other-info'>
-                    <img src={logo} alt='logo' className='logo'/>
+                    <img src={logo} alt='logo' className='logo' />
 
                     <h1>Happening now</h1>
 
@@ -32,12 +32,14 @@ function Twitter() {
                     </div>
 
                     <div className='signup-handle'>
-                        <img src={phone} alt='image' onClick={() => navigate("/login")}/>
+                        <img src={phone} alt='image' onClick={() => navigate("/login")} />
                     </div>
 
-                    <p>By singing up you agree to the <a href='#'>Terms of Service</a> and <a href='#'>Privacy Policy,</a> including Cookie Use.</p>
+                    <div className='terms'>
+                        <p>By singing up you agree to the <a href='#'>Terms of Service</a> and <a href='#'>Privacy Policy,</a> including Cookie Use.</p>
+                        <p>Already have an account? <a href='/login'>Log in</a></p>
+                    </div>
 
-                    <p>Already have an account? <a href='/login'>Log in</a></p>
                 </div>
             </div>
             <div className="footer">
