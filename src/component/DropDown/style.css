@@ -1,0 +1,21 @@
+
+.drop-down-container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.drop-down-container select
+{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 0.1px solid rgb(199, 198, 198);
+    font-family: 'Inter', sans-serif;  
+    font-size: 18px;
+    outline: none;
+}
