@@ -1,5 +1,4 @@
-.info-container
-{
+.info-container {
     display: flex;
     height: 96vh;
     gap: 5rem;
@@ -7,34 +6,29 @@
     width: 100%;
 }
 
-.image-container
-{
+.image-container {
     height: 100%;
     width: 50%;
 }
 
-.image-container img
-{
+.image-container img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.other-info
-{
+.other-info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.other-info a
-{
+.other-info a {
     text-decoration: none;
     color: var(--blue);
 }
 
-.footer
-{
+.footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -46,18 +40,61 @@
     gap: 20px;
 }
 
-.footer a
-{
+.footer a {
     text-decoration: none;
     color: black;
 }
 
-.signup-handle img
-{
+.signup-handle img {
     cursor: pointer;
 }
 
-.other-info h1
-{
+.other-info h1 {
     font-size: 4rem;
+}
+
+
+@media (max-width: 1850px) {
+    .info-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .image-container {
+
+        width: 100%;
+        height: 40%;
+    }
+
+    .other-info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo
+    {
+        align-self: center;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .footer
+    {
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 680px)
+{
+    .other-info
+    {
+        gap: 1rem;
+    }
+
+    .other-info h1 {
+        font-size: 3rem;
+    }
 }
